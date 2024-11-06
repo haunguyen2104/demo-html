@@ -1,0 +1,66 @@
+.card-container {
+    display: flex;
+    gap    : 20px;
+}
+
+.card {
+    width        : 200px;
+    padding      : 20px;
+    border       : 2px solid #333;
+    border-radius: 10px;
+    text-align   : center;
+    transition   : transform 0.3s;
+
+    h3 {
+        font-size: 1.2em;
+        margin   : 10px 0;
+        color    : #333;
+    }
+
+    p {
+        font-size: 0.9em;
+        color    : #666;
+        margin   : 10px 0 20px;
+    }
+
+    button {
+        padding      : 10px 20px;
+        border       : none;
+        border-radius: 20px;
+        font-size    : 0.9em;
+        font-weight  : bold;
+        cursor       : pointer;
+        transition   : background 0.3s;
+    }
+
+
+    &.twitter {
+        border-color: #1DA1F2;
+    }
+
+    &.instagram {
+        border: 1px solid #E1306C;
+        color : #fff;
+    }
+
+    &.youtube {
+        border-color: #FF0000;
+    }
+
+    &.instagram button,
+    &.twitter button,
+    &.youtube button {
+        background-color: #333;
+        color           : #fff;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &-icon {
+        width        : 40px;
+        height       : 40px;
+        margin-bottom: 10px;
+    }
+}
